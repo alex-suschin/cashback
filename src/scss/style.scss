@@ -354,7 +354,7 @@ h1 {
 }
 
 .cashback-price {
-    padding: 150px 0 0 0;
+    padding: 150px 0 84px 0;
     .title {
         color: #404040;
         margin-bottom: 46px;
@@ -366,8 +366,11 @@ h1 {
         color: #404040;
     }
     .btn-red {
+        position: relative;
+        z-index: 15;
         max-width: 337px;
         width: 100%;
+        margin: -48px 0 0 0;
     }
 }
 
@@ -581,6 +584,293 @@ h1 {
         -o-border-radius: 50%;
         bottom: -92px;
         left: 314px;
+    }
+}
+
+.cashback-steps {
+    padding: 0 0 155px 0;
+    .title {
+        color: #404040;
+        margin: 89px 0 0 0;
+        margin-bottom: 95px;
+    }
+}
+
+.num {
+    font-family: 'Circe', serif;
+    font-weight: 800;
+    font-size: 82px;
+    line-height: 113.59%;
+    color: #D2D2D2;
+    margin-bottom: 15px;
+}
+
+.step {
+    b {
+        position: relative;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 113.59%;
+        color: #404040;
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -26px;
+            left: 0;
+            width: 62px;
+            height: 12px;
+            background: url(../img/snake.svg) no-repeat center;
+        }
+        span {
+            font-weight: 700;
+        }
+    }
+}
+
+.step-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 110px;
+}
+
+.step-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.step-1__left {
+    width: 41%;
+}
+
+.step-2__left {
+    width: 53%;
+    position: relative;
+    .circle {
+        position: absolute;
+        right: 8px;
+        top: -49px;
+    }
+    .brand {
+        position: absolute;
+        left: 26px;
+        bottom: 33px;
+    }
+    .circle-text {
+        position: absolute;
+        right: -104px;
+        top: -161px;
+        z-index: 3;
+        max-width: inherit;
+        max-height: inherit;
+    }
+}
+
+.circle {
+    font-family: 'Circe', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 102px;
+    line-height: 113.59%;
+    color: #FFFFFF;
+    width: 270px;
+    height: 270px;
+    background: #D12702;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    sub {
+        font-size: 47px;
+        line-height: 54px;
+    }
+}
+
+.step-1__right {
+    width: 53%;
+    position: relative;
+    .circle {
+        position: absolute;
+        right: 8px;
+        top: -49px;
+    }
+    .brand {
+        position: absolute;
+        left: 26px;
+        bottom: 33px;
+    }
+    .circle-text {
+        position: absolute;
+        right: -104px;
+        top: -161px;
+        z-index: 3;
+        max-width: inherit;
+        max-height: inherit;
+    }
+}
+
+.step-2__right {
+    width: 42.5%;
+    padding: 74px 0 0 0;
+    .btn-red {
+        margin-top: 123px;
+        max-width: 378px;
+        width: 100%;
+    }
+    .num {
+        margin-bottom: 24px;
+    }
+    b {
+        font-family: 'Circe', sans-serif;
+        &::after {
+            bottom: -99px;
+        }
+    }
+    span {
+        font-family: 'Montserat', sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+    }
+    small {
+        display: block;
+        margin-top: 15px;
+        font-size: 19.8px;
+        font-family: 'Montserat', sans-serif;
+        font-weight: 700;
+        line-height: 21.35px;
+    }
+}
+
+.step-2__left {
+    .circle-text {
+        top: 165px;
+        right: 43px;
+    }
+    .circle {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #FF9A23;
+        right: 116px;
+        top: 212px;
+        img {
+            display: block;
+        }
+    }
+}
+
+.gift-car {
+    position: relative;
+    padding: 166px 0 96px 0;
+    background: #D12702;
+    z-index: 5;
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: url(../img/dots.png) no-repeat center;
+        z-index: 2;
+        background-size: cover;
+    }
+    .title {
+        line-height: 52px;
+        margin-bottom: 55px;
+    }
+}
+
+.gift-car-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    span {
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 117.6%;
+        color: #FFFFFF;
+        b {
+            font-weight: 700;
+        }
+    }
+    .btn-white {
+        position: relative;
+        z-index: 15;
+        max-width: 342px;
+        width: 100%;
+        margin: 78px 0 0 0;
+    }
+}
+
+.gift-car-box__left {
+    width: 48%;
+    position: relative;
+}
+
+.car-big {
+    position: absolute;
+    top: 337px;
+    left: -283px;
+    z-index: 5;
+    max-width: inherit;
+    max-height: inherit;
+}
+
+.car-small {
+    position: absolute;
+    top: 195px;
+    left: 217px;
+    z-index: 5;
+    max-width: inherit;
+    max-height: inherit;
+}
+
+.gift-car-box__right {
+    width: 41.1%;
+    span {
+        position: relative;
+        display: block;
+        margin-bottom: 171px;
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -70px;
+            left: 0;
+            width: 62px;
+            height: 12px;
+            background: url(../img/snake-white.svg) no-repeat center;
+        }
+    }
+    b {
+        font-size: 24px;
+    }
+}
+
+.dates-item {
+    margin-bottom: 35px;
+    i {
+        display: block;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+    b {
+        font-size: 24px;
+        line-height: 30px;
+        color: #FFFFFF;
+        font-weight: 700;
     }
 }
 
