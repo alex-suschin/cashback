@@ -1,0 +1,212 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Black.eot");
+  src: url("../fonts/Montserrat-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Black.woff2") format("woff2"), url("../fonts/Montserrat-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: url("../fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 400;
+  color: #000;
+  position: relative;
+  height: 100%;
+  background: url(../img/bg.jpg) repeat-y center top;
+  background-size: cover;
+  -webkit-tap-highlight-color: transparent; }
+
+div,
+section,
+footer,
+.btn {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+a {
+  color: #000;
+  -webkit-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+a:focus,
+input:focus {
+  outline: none; }
+
+p {
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 29px;
+  margin: 0 0 10px 0; }
+
+input {
+  display: block;
+  width: 100%;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 29px;
+  padding: 0 8px;
+  margin-bottom: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear; }
+
+input:hover,
+input:focus {
+  outline: none; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+ul li {
+  position: relative;
+  padding: 0 0 0 0; }
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear; }
+
+.title {
+  color: #000;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 53px;
+  margin-bottom: 20px; }
+
+.desc {
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 29px;
+  margin-bottom: 15px; }
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block; }
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.wrapper {
+  position: relative; }
+
+.container {
+  position: relative;
+  max-width: 1174px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px; }
+
+input:not([type=checkbox]):not([type=radio]),
+textarea,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+/* I E   S T Y L E S */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .block {
+    width: 100%; } }
+
+.ov-hidden {
+  overflow: hidden; }
+
+.btn-orange {
+  display: block;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 113.59%;
+  padding: 22px 0 23px 0;
+  color: #FFFFFF;
+  text-align: center;
+  background: #FF9A23;
+  border-radius: 55px; }
+
+header {
+  padding: 86px 0 75px 0; }
+  header .container {
+    max-width: 1208px; }
+
+h1 {
+  margin-top: 0;
+  font-weight: 800;
+  font-size: 75px;
+  line-height: 100.59%;
+  color: #323232;
+  margin-bottom: 37px; }
+  h1 span {
+    color: #FF9A23; }
+
+.top-wrap {
+  position: relative;
+  padding: 0 0 75px 0; }
+  .top-wrap .container {
+    max-width: 1184px; }
+  .top-wrap .btn-orange {
+    max-width: 318px;
+    width: 100%; }
+
+.top-img {
+  position: absolute;
+  top: -200px;
+  right: 107px;
+  max-width: inherit;
+  max-height: inherit;
+  z-index: -1; }
+
+@media screen and (min-width: 992px) {
+  .btn-orange:hover {
+    background: #FF7A00; } }
+
+/* 
+    M O B I L E
+*/
+@media screen and (max-width: 1200px) {
+  html,
+  body {
+    min-width: 320px;
+    width: 100%;
+    overflow-x: hidden; }
+  a:focus {
+    outline: none; } }
+
+/*# sourceMappingURL=../sourcemaps/style.css.map */
