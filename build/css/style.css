@@ -7,22 +7,6 @@
   font-display: swap; }
 
 @font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Black.eot");
-  src: url("../fonts/Montserrat-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Black.woff2") format("woff2"), url("../fonts/Montserrat-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Regular.eot");
-  src: url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
   font-family: "Circe";
   src: url("../fonts/Circe-Regular.eot");
   src: url("../fonts/Circe-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe-Regular.woff2") format("woff2"), url("../fonts/Circe-Regular.woff") format("woff");
@@ -32,9 +16,25 @@
 
 @font-face {
   font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Black.eot");
+  src: url("../fonts/Montserrat-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Black.woff2") format("woff2"), url("../fonts/Montserrat-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Montserrat";
   src: url("../fonts/Montserrat-Bold.eot");
   src: url("../fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
   font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
   font-display: swap; }
 
@@ -798,6 +798,176 @@ h1 {
     line-height: 30px;
     color: #FFFFFF;
     font-weight: 700; }
+
+.bonus-price {
+  position: absolute;
+  top: 33%;
+  left: 283px;
+  font-weight: 800;
+  font-size: 59px;
+  line-height: 130.6%;
+  color: #464646; }
+
+.bonus-price-last {
+  top: 39.5%; }
+
+.cashback-bonus {
+  padding: 327px 0 0 0; }
+  .cashback-bonus .title {
+    color: #333333;
+    margin-bottom: 93px; }
+
+.cashback-bonus-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.cashback-bonus__left {
+  padding: 37px 0 0 0;
+  width: 40.5%; }
+  .cashback-bonus__left .subtitle {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 113.59%;
+    color: #494949; }
+  .cashback-bonus__left .bonus-price {
+    color: #464646; }
+
+.cashback-bonus__right {
+  width: 52.8%;
+  background: #D12702;
+  border-radius: 11px;
+  padding: 35px 37px 59px 69px; }
+  .cashback-bonus__right .subtitle {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 113.59%;
+    color: #fff; }
+  .cashback-bonus__right .bonus-text span,
+  .cashback-bonus__right .bonus-text b,
+  .cashback-bonus__right .bonus-desc,
+  .cashback-bonus__right .bonus-desc b {
+    color: #fff; }
+  .cashback-bonus__right .bonus-price {
+    color: #fff; }
+  .cashback-bonus__right .bonus-calc i {
+    color: #fff; }
+  .cashback-bonus__right .bonus-total-price {
+    color: #fff; }
+
+.bonus-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 68px; }
+
+.bonus-text {
+  max-width: 350px;
+  width: 100%;
+  margin-bottom: 53px; }
+  .bonus-text span {
+    display: block;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 130.6%;
+    color: #494949;
+    margin-bottom: 33px; }
+  .bonus-text b {
+    display: block;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 130.6%;
+    color: #494949; }
+
+.bonus-calc {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 108px; }
+  .bonus-calc i {
+    display: block;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 130.6%;
+    color: #494949;
+    margin-bottom: 8px; }
+
+.bonus-calc-elem {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.bonus-img {
+  position: relative;
+  overflow: hidden;
+  width: 109px;
+  height: 109px;
+  background: #FF9A23;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-bottom: 24px; }
+  .bonus-img img {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto; }
+
+.bonus-desc {
+  font-family: 'Circe', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 130.6%;
+  text-align: center;
+  color: #494949; }
+  .bonus-desc b {
+    font-family: 'Montserat', sans-serif;
+    display: block;
+    font-weight: 700; }
+
+.skob {
+  position: absolute;
+  top: 50%;
+  left: 181px;
+  transform: translateY(-61%);
+  -webkit-transform: translateY(-61%);
+  -moz-transform: translateY(-61%);
+  -ms-transform: translateY(-61%);
+  -o-transform: translateY(-61%); }
+
+.bonus-total-price {
+  font-weight: 800;
+  font-size: 132px;
+  line-height: 130.6%;
+  color: #464646;
+  margin: 0 0 0 24px; }
 
 @media screen and (min-width: 992px) {
   .btn-orange:hover {
