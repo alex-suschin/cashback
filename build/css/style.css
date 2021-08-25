@@ -51,7 +51,7 @@ body {
   position: relative;
   height: 100%;
   background: url(../img/bg.jpg) repeat-y center top;
-  background-size: cover;
+  background-size: contain;
   -webkit-tap-highlight-color: transparent; }
 
 div,
@@ -83,13 +83,13 @@ p {
   margin: 0 0 10px 0; }
 
 input {
-  display: block;
-  width: 100%;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 29px;
-  padding: 0 8px;
-  margin-bottom: 20px;
+  border: none;
+  background: -webkit-gradient(linear, left bottom, left top, from(#F7F7F7), to(#F7F7F7)), #FFFFFF;
+  background: -o-linear-gradient(bottom, #F7F7F7, #F7F7F7), #FFFFFF;
+  background: linear-gradient(0deg, #F7F7F7, #F7F7F7), #FFFFFF;
+  height: 72px;
+  padding: 0 23px;
+  border-radius: 9px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all 0.1s linear;
@@ -117,7 +117,9 @@ button {
   -o-transition: all 0.1s linear;
   transition: all 0.1s linear; }
 
-.title {
+.title,
+h2 {
+  margin-top: 0;
   font-weight: bold;
   font-size: 57px;
   line-height: 113.59%;
@@ -248,6 +250,7 @@ h1 {
   z-index: 1; }
 
 .top-btns {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -935,8 +938,8 @@ h1 {
   margin-bottom: 24px; }
   .bonus-img img {
     position: absolute;
-    right: 0;
     left: 0;
+    top: 0;
     bottom: 0;
     margin: auto; }
 
@@ -968,6 +971,297 @@ h1 {
   line-height: 130.6%;
   color: #464646;
   margin: 0 0 0 24px; }
+
+.questions {
+  padding: 221px 0 85px 0; }
+  .questions .title {
+    position: relative;
+    margin-bottom: 81px;
+    color: #454545; }
+    .questions .title::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: -67px;
+      left: 0;
+      width: 62px;
+      height: 12px;
+      background: url(../img/snake.svg) no-repeat center; }
+
+.questions-item-hide {
+  max-width: 681px;
+  width: 100%;
+  position: relative;
+  display: none;
+  padding: 0 0 0 26px;
+  margin: 50px 0 82px 120px; }
+  .questions-item-hide::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 100%;
+    width: 4px;
+    background: #C42047;
+    border-radius: 6px;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  .questions-item-hide p {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 148.1%;
+    color: #3F3F3F; }
+    .questions-item-hide p a {
+      text-decoration: underline; }
+
+.questions-item {
+  position: relative;
+  padding: 0 0 0 0;
+  margin-bottom: 1.5px; }
+
+.questions-title {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 223.6%;
+  color: #494949; }
+
+.questions-item-show {
+  position: relative;
+  cursor: pointer;
+  padding: 0 0 0 64px; }
+  .questions-item-show b {
+    position: absolute;
+    left: 0;
+    top: 14px;
+    display: block;
+    background-color: #FFFFFF;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-image: url(../img/plus.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear; }
+
+.questions-item.active b {
+  background-image: url(../img/minus.svg); }
+
+.form-box {
+  padding: 132px 63px 57px 63px;
+  background: #FFFFFF;
+  border-radius: 11px;
+  margin-bottom: 92px; }
+  .form-box .title {
+    position: relative;
+    font-size: 47px;
+    color: #454545;
+    margin-bottom: 28px; }
+    .form-box .title::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: -57px;
+      left: 0;
+      width: 62px;
+      height: 12px;
+      background: url(../img/snake.svg) no-repeat center; }
+  .form-box .desc {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 117.6%;
+    color: #606060;
+    margin-bottom: 61px; }
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  .form input {
+    width: 48.685%;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 113.59%;
+    color: #15355C;
+    margin-bottom: 16px; }
+  .form textarea {
+    width: 100%;
+    outline: none;
+    resize: none;
+    border: none;
+    padding: 29px 27px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 113.59%;
+    color: #15355C;
+    background: -webkit-gradient(linear, left bottom, left top, from(#F7F7F7), to(#F7F7F7)), #FFFFFF;
+    background: -o-linear-gradient(bottom, #F7F7F7, #F7F7F7), #FFFFFF;
+    background: linear-gradient(0deg, #F7F7F7, #F7F7F7), #FFFFFF;
+    border-radius: 9px;
+    min-height: 161px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-bottom: 71px; }
+  .form .btn-red {
+    display: block;
+    max-width: 372px;
+    width: 100%;
+    margin-bottom: 78px; }
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.contacts-item {
+  width: 33%;
+  margin-bottom: 53px; }
+  .contacts-item span {
+    display: block;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 117.6%;
+    color: #606060;
+    margin-bottom: 17px; }
+  .contacts-item a {
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 117.6%;
+    color: #606060; }
+  .contacts-item .whats {
+    background: url(../img/whatsapp.svg) no-repeat left center;
+    padding: 0 0 0 52px; }
+  .contacts-item .teleg {
+    background: url(../img/telegram.svg) no-repeat left center;
+    padding: 0 0 0 52px;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    color: #0068B4; }
+
+.contacts-item-big {
+  width: 52%; }
+
+.partners-items {
+  border-bottom: 1px solid #D2D2D2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .partners-items img {
+    margin-bottom: 42px; }
+
+footer {
+  padding: 57px 0 0 0; }
+  footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+
+.footer-item:first-child {
+  max-width: 242px;
+  width: 100%;
+  margin-right: 22px; }
+
+.footer-item:last-child {
+  text-align: left;
+  max-width: 271px;
+  width: 100%; }
+
+.footer-item a {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #353535; }
+
+.footer-item span {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #353535; }
+
+.line-top {
+  position: absolute;
+  top: 119px;
+  left: 6px;
+  z-index: 10; }
+  .line-top span {
+    font-family: 'Circe', sans-serif;
+    font-weight: 800;
+    font-size: 29px;
+    line-height: 100.59%;
+    color: #313131;
+    margin-left: 0 !important; }
+  .line-top img {
+    position: absolute;
+    top: 36px;
+    max-width: inherit;
+    max-height: inherit; }
+  .line-top::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 13px;
+    height: 13px;
+    background: #313131;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    right: -63px;
+    bottom: -76px; }
+
+.bonus-img img.bonus-lab {
+  position: absolute;
+  left: inherit;
+  bottom: inherit;
+  top: -6px;
+  right: -19px; }
+
+.bonus-img img.price-bonus {
+  position: absolute; }
 
 @media screen and (min-width: 992px) {
   .btn-orange:hover {
