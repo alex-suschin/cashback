@@ -1482,9 +1482,208 @@ footer {
     .top-btns .btn-orange {
         margin: 0 auto;
     }
+    .car-img {
+        right: 0;
+        top: 118px;
+        max-width: 34%;
+    }
+    .line-top {
+        top: 190px;
+        &::after {
+            right: -63px;
+            bottom: -43px;
+        }
+    }
+    .line {
+        position: relative;
+        top: initial;
+        right: initial;
+        left: initial;
+        bottom: initial;
+        margin-bottom: 65px;
+        &:last-child {
+            margin-bottom: 83px;
+        }
+        span {
+            font-size: 16px;
+            br {
+                display: none;
+            }
+        }
+        .img-line {
+            display: none;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            width: 226px;
+            bottom: -24px;
+            left: 0;
+            height: 4px;
+            background: #444444;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+        }
+        &::after {
+            content: none;
+        }
+        .img-label {
+            left: 150px;
+            right: initial;
+        }
+    }
+    .cashback-price .desc {
+        margin-bottom: 0;
+    }
+    .cashback-price .btn-red {
+        margin: 0 0 0 0;
+    }
+    .line-1 img.img-label {
+        top: 7px;
+        left: 193px;
+    }
+    .line-1 img.price {
+        top: 26px;
+        left: 238px;
+    }
+    .line-2 img.img-label {
+        top: 7px;
+        left: 193px;
+    }
+    .line-2 img.price {
+        top: 26px;
+        left: 238px;
+    }
+    .line-3 img.img-label {
+        top: 7px;
+        left: 193px;
+    }
+    .line-3 img.price {
+        top: 27px;
+        left: 238px;
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    .line-4 img.img-label {
+        top: 7px;
+        left: 193px;
+    }
+    .line-4 img.price {
+        top: 23px;
+        left: 235px;
+        transform: rotate(-18deg);
+        -webkit-transform: rotate(-18deg);
+        -moz-transform: rotate(-18deg);
+        -ms-transform: rotate(-18deg);
+        -o-transform: rotate(-18deg);
+    }
+    .line-5 img.img-label {
+        top: 7px;
+        left: 193px;
+    }
+    .line-5 img.price {
+        top: 26px;
+        left: 238px;
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    .contacts-item a {
+        font-size: 32px;
+    }
+    .contacts-item span {
+        font-size: 18px;
+    }
+    .contacts-item {
+        width: 36%;
+    }
+    .contacts-item-big {
+        width: 50%;
+    }
+    .questions-title {
+        font-size: 22px;
+    }
+    .questions-item-hide p {
+        font-size: 22px;
+    }
+    .questions-item-show b {
+        top: 8px;
+    }
+    .bonus-text span {
+        font-size: 16px;
+    }
+    .bonus-price {
+        font-size: 42px;
+        top: 35.5%;
+    }
+    .bonus-price-last {
+        top: 41%;
+    }
+    .bonus-total-price {
+        font-size: 72px;
+    }
+    .bonus-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .subtitle {
+        margin-bottom: 31px;
+    }
 }
 
-@media screen and (max-width: 991px) {}
+@media screen and (max-width: 991px) {
+    .bonus-top {
+        margin-bottom: 0;
+    }
+    .cashback-bonus__left {
+        background: #EDEDED;
+        border-radius: 11px;
+        padding: 29px 23px 29px 23px;
+    }
+    .cashback-bonus__right {
+        border-radius: 11px;
+        padding: 29px 27px 19px 27px;
+    }
+    .bonus-wrap {
+        display: none;
+    }
+    .participate-item {
+        margin-right: 25px;
+    }
+    .car-img {
+        top: 167px;
+    }
+    .questions-title {
+        font-size: 18px;
+    }
+    .questions-item-show b {
+        top: 5px;
+    }
+    .questions-item-show {
+        padding: 0 0 0 53px;
+    }
+    .questions-item-hide p {
+        font-size: 18px;
+    }
+    .questions-item-hide {
+        margin: 30px 0 22px 55px;
+    }
+    .form-box .title {
+        font-size: 31px;
+    }
+    .cashback-bonus .title {
+        font-size: 36px;
+        margin-bottom: 42px;
+    }
+}
 
 @media screen and (max-width: 1024px) {}
 
