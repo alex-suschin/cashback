@@ -1365,19 +1365,124 @@ footer {
     M O B I L E
 */
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1650px) {
+    .car-img {
+        right: -105px;
+    }
+    .car-big {
+        top: 405px;
+        left: 0;
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
     html,
     body {
         min-width: 320px;
         width: 100%;
         overflow-x: hidden;
     }
-    a:focus {
-        outline: none;
+    .car-img {
+        right: 150px;
+        top: 223px;
+        max-width: 40%;
+    }
+    .stol-img {
+        top: 353px;
+        max-width: 70%;
+    }
+    .top-img {
+        top: -27px;
+        right: 166px;
+        max-width: 31%;
+    }
+    header {
+        padding: 45px 0 35px 0;
+    }
+    .how-participate {
+        margin: -60px 0 0 0;
     }
 }
 
-@media screen and (max-width: 1199px) {}
+@media screen and (max-width: 1200px) {
+    a:focus {
+        outline: none;
+    }
+    .participate-items {
+        flex-wrap: wrap;
+    }
+    .participate-item {
+        width: 41%;
+        margin-bottom: 55px;
+    }
+    .how-participate {
+        padding: 44px 0 77px 0;
+    }
+    .how-participate .title {
+        font-size: 38px;
+        line-height: 113.59%;
+        margin-bottom: 54px;
+    }
+    .how-participate .btn-white {
+        margin-top: 0;
+    }
+    .cashback-price {
+        padding: 64px 0 84px 0;
+    }
+    .cashback-price .title {
+        font-size: 38px;
+        line-height: 113.59%;
+    }
+    .line-2 {
+        left: 77%;
+    }
+    .step-1__left {
+        width: 36%;
+    }
+    .step-1__right {
+        width: 61%;
+    }
+    .step-1__right .circle {
+        right: 82px;
+    }
+    .step-1__right .circle-text {
+        right: -30px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .top-img {
+        display: none;
+    }
+    .logo {
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+        margin-bottom: 23px;
+    }
+    h1 {
+        font-size: 42px;
+        line-height: 100.59%;
+        text-align: center;
+        margin-bottom: 22px;
+    }
+    header {
+        padding: 45px 0 0 0;
+    }
+    .top-btns {
+        flex-direction: column-reverse;
+        span {
+            width: 100%;
+            display: block;
+            margin: 0 0 32px 0;
+            text-align: center;
+        }
+    }
+    .top-btns .btn-orange {
+        margin: 0 auto;
+    }
+}
 
 @media screen and (max-width: 991px) {}
 
