@@ -1860,6 +1860,10 @@ footer {
   .step-1__right .circle {
     left: 124px; }
   .step-1__right .circle-text {
-    left: 78px; } }
+    left: 78px; }
+  .line-top {
+    top: 152px; }
+  .form-box {
+    padding: 65px 12px 42px 12px; } }
 
 /*# sourceMappingURL=../sourcemaps/style.css.map */
