@@ -99,6 +99,16 @@ ul li {
 //     -ms-border-radius: 50%;
 //     -o-border-radius: 50%;
 // }
+ol {
+    li {
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 148.1%;
+        color: #3F3F3F;
+    }
+}
+
 button {
     border: none;
     outline: none;
@@ -928,7 +938,7 @@ h1 {
     .subtitle {
         font-weight: bold;
         font-size: 30px;
-        line-height: 113.59%;
+        line-height: 157.59%;
         color: #fff;
     }
     .bonus-text span,
@@ -942,13 +952,20 @@ h1 {
     }
     .bonus-calc i {
         color: #fff;
+        margin: 1px;
+        line-height: 1;
     }
     .bonus-total-price {
         color: #fff;
+        line-height: 158.6%;
+    }
+    .bonus-top {
+        margin-bottom: 41px;
     }
 }
 
 .bonus-top {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1260,7 +1277,8 @@ h1 {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    img {
+    a {
+        display: block;
         margin-bottom: 42px;
     }
 }
@@ -1349,6 +1367,40 @@ footer {
 
 .bonus-img img.price-bonus {
     position: absolute;
+}
+
+.bonus-top-btn-mob {
+    @include tr2;
+    position: absolute;
+    bottom: -8px;
+    right: 2px;
+    display: none;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-image: url(../img/white-arr-small.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cashback-bonus__left .bonus-top-btn-mob {
+    background-color: #D12702;
+}
+
+.cashback-bonus__right .bonus-top-btn-mob {
+    background-color: #FF9A23;
+}
+
+.active .bonus-top-btn-mob {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
 }
 
 @media screen and (min-width:992px) {
@@ -1503,10 +1555,7 @@ footer {
         right: initial;
         left: initial;
         bottom: initial;
-        margin-bottom: 65px;
-        &:last-child {
-            margin-bottom: 83px;
-        }
+        margin-bottom: 58px;
         span {
             font-size: 16px;
             br {
@@ -1519,8 +1568,8 @@ footer {
         &::before {
             content: '';
             position: absolute;
-            width: 226px;
-            bottom: -24px;
+            width: 100%;
+            bottom: -21px;
             left: 0;
             height: 4px;
             background: #444444;
@@ -1545,28 +1594,28 @@ footer {
         margin: 0 0 0 0;
     }
     .line-1 img.img-label {
-        top: 7px;
-        left: 193px;
+        top: 6px;
+        left: 196px;
     }
     .line-1 img.price {
-        top: 26px;
-        left: 238px;
+        top: 25px;
+        left: 242px;
     }
     .line-2 img.img-label {
-        top: 7px;
-        left: 193px;
+        top: 6px;
+        left: 166px;
     }
     .line-2 img.price {
-        top: 26px;
-        left: 238px;
+        top: 25px;
+        left: 212px;
     }
     .line-3 img.img-label {
-        top: 7px;
-        left: 193px;
+        top: 6px;
+        left: 216px;
     }
     .line-3 img.price {
-        top: 27px;
-        left: 238px;
+        top: 26px;
+        left: 262px;
         transform: rotate(0deg);
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
@@ -1574,12 +1623,12 @@ footer {
         -o-transform: rotate(0deg);
     }
     .line-4 img.img-label {
-        top: 7px;
-        left: 193px;
+        top: 5px;
+        left: 236px;
     }
     .line-4 img.price {
-        top: 23px;
-        left: 235px;
+        top: 22px;
+        left: 275px;
         transform: rotate(-18deg);
         -webkit-transform: rotate(-18deg);
         -moz-transform: rotate(-18deg);
@@ -1587,12 +1636,12 @@ footer {
         -o-transform: rotate(-18deg);
     }
     .line-5 img.img-label {
-        top: 7px;
-        left: 193px;
+        top: 6px;
+        left: 206px;
     }
     .line-5 img.price {
-        top: 26px;
-        left: 238px;
+        top: 25px;
+        left: 252px;
         transform: rotate(0deg);
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
@@ -1708,6 +1757,31 @@ footer {
     .step-2__left img {
         max-width: 70%;
     }
+    .cashback-price-box {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .line-1 {
+        order: 2;
+        width: 230px;
+    }
+    .line-2 {
+        order: 1;
+        width: 226px;
+    }
+    .line-3 {
+        order: 4;
+        width: 249px;
+    }
+    .line-4 {
+        order: 5;
+        width: 285px;
+    }
+    .line-5 {
+        width: 249px;
+        order: 3;
+    }
 }
 
 @media screen and (max-width: 1080px) {}
@@ -1810,6 +1884,9 @@ footer {
 }
 
 @media screen and (max-width: 991px) {
+    .bonus-top-btn-mob {
+        display: block;
+    }
     .bonus-wrap {
         margin-top: 35px;
     }
@@ -1926,6 +2003,9 @@ footer {
     .partners-items {
         flex-direction: column;
         align-items: flex-start;
+    }
+    .partners-items a:first-child {
+        margin-left: -18px;
     }
     .questions-item-show b {
         top: -5px;
@@ -2124,6 +2204,12 @@ footer {
     }
     .form-box {
         padding: 65px 12px 42px 12px;
+    }
+    .line {
+        width: 235px!important;
+    }
+    .line-4 {
+        width: 287px!important;
     }
 }
 
