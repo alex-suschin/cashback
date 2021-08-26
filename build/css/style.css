@@ -215,6 +215,8 @@ h1 {
   margin-bottom: 37px; }
   h1 span {
     color: #FF9A23; }
+  h1 i {
+    font-style: normal; }
 
 .top-wrap {
   position: relative;
@@ -1548,7 +1550,7 @@ footer {
 @media screen and (max-width: 1040px) {
   .step-1__right .circle {
     right: initial;
-    left: 188px;
+    left: 165px;
     top: -16px; }
   .step-1,
   .step-2 {
@@ -1561,12 +1563,18 @@ footer {
             align-items: flex-start; }
   .step-1__left {
     width: 100%; }
+  .step-2__left .btn-red {
+    margin-top: 25px; }
+  .cashback-steps {
+    padding: 0 0 55px 0; }
   .step b {
     display: block;
     font-size: 22px;
     margin-bottom: 99px; }
   .step b span {
     font-size: 22px; }
+  .step-2__left {
+    width: 100%; }
   .step b br {
     display: none; }
   .step-1__right .circle-text {
@@ -1574,7 +1582,7 @@ footer {
     width: 244px;
     top: -70px;
     right: initial;
-    left: 146px; }
+    left: 123px; }
   .step-2__left {
     -webkit-box-ordinal-group: 6;
         -ms-flex-order: 5;
@@ -1624,6 +1632,17 @@ footer {
     left: 212px; } }
 
 @media screen and (max-width: 991px) {
+  .bonus-wrap {
+    margin-top: 35px; }
+  .cashback-bonus-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .cashback-bonus__left,
+  .cashback-bonus__right {
+    width: 100%;
+    margin-bottom: 21px; }
   .questions .title {
     font-size: 38px;
     margin-bottom: 50px; }
@@ -1632,11 +1651,11 @@ footer {
   .cashback-bonus__left {
     background: #EDEDED;
     border-radius: 11px;
-    padding: 29px 23px 29px 23px; }
+    padding: 29px 19px 29px 19px; }
   .cashback-bonus__right {
     border-radius: 11px;
     padding: 29px 27px 19px 27px; }
-  .bonus-wrap {
+  .cashback-bonus__left .bonus-wrap {
     display: none; }
   .participate-item {
     margin-right: 25px; }
@@ -1669,8 +1688,18 @@ footer {
     margin-bottom: 49px; } }
 
 @media screen and (max-width: 865px) {
-  .contacts-item-big {
+  .contacts-item-big,
+  .contacts-item {
     width: 100%; }
+  .contacts-item .whats {
+    padding: 0 0 0 45px; }
+  .contacts-item a {
+    font-size: 28px; }
+  .contacts-item:last-child {
+    margin-bottom: 0; }
+  .contacts-item .teleg {
+    font-size: 24px;
+    padding: 2px 0 2px 45px; }
   .car-big {
     top: 625px;
     max-width: 65%; }
@@ -1679,6 +1708,158 @@ footer {
   .questions-title {
     line-height: 22.88px; }
   .questions-item {
-    margin-bottom: 25px; } }
+    margin-bottom: 25px; }
+  .footer-item {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 35px; }
+  footer .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .partners-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .questions-item-show b {
+    top: -5px; } }
+
+@media screen and (max-width: 700px) {
+  h1 br {
+    display: none; }
+  h1 {
+    margin: 0 -15px;
+    margin-bottom: 19px; }
+  h1 i {
+    display: none; }
+  .cashback-price .desc br {
+    display: none; }
+  .cashback-price .title {
+    margin-bottom: 22px; }
+  .stol-img {
+    max-width: inherit;
+    max-height: inherit; }
+  .participate-item {
+    margin-right: 0;
+    width: 100%; }
+  .contacts-item span {
+    margin-bottom: 10px; }
+  .form input {
+    width: 100%; }
+  .questions-item-hide {
+    max-width: initial;
+    width: initial; }
+  .form-box .desc {
+    margin-bottom: 30px; }
+  .cashback-steps .title {
+    margin-top: 60px;
+    margin-bottom: 50px; }
+  .footer-item {
+    display: none; }
+  .skob {
+    height: 202px;
+    left: 142px; }
+  .bonus-price {
+    top: 38.5%;
+    left: 193px;
+    font-size: 34px; }
+  .bonus-price-last {
+    top: 42.5%; }
+  .bonus-total-price {
+    font-size: 95px;
+    margin: 0; }
+  .bonus-calc {
+    margin-bottom: 20px; }
+  .bonus-desc,
+  .bonus-text b {
+    font-size: 14px; }
+  .bonus-img {
+    width: 83px;
+    height: 83px; }
+  footer {
+    padding: 0 0 0 0; }
+  .partners-items {
+    border: none; }
+  .form-box .title {
+    font-size: 28px; }
+  .form-box .title br,
+  .form-box .desc br {
+    display: none; }
+  .form textarea {
+    min-height: 264px; }
+  .car-img {
+    top: 201px;
+    max-width: 61%;
+    right: 0; }
+  .stol-img {
+    top: 344px;
+    width: 79%; }
+  .how-participate {
+    margin: -68px 0 0 0; }
+  .how-participate::after {
+    left: 45%; }
+  .line-top {
+    top: 204px;
+    left: 0; }
+  .participate-item {
+    margin-bottom: 69px; }
+  .car-small {
+    top: 462px;
+    left: initial;
+    right: -261px; }
+  .car-big {
+    top: 647px;
+    width: 553px;
+    left: -250px;
+    max-width: initial; }
+  .cashback-bonus .title br {
+    display: none; } }
+
+@media screen and (max-width: 500px) {
+  .car-small {
+    top: 658px; }
+  .car-big {
+    top: 823px; }
+  .gift-car {
+    padding: 67px 0 150px 0; } }
+
+@media screen and (max-width: 365px) {
+  .skob {
+    left: 116px; }
+  .bonus-price {
+    top: 39.9%;
+    left: 170px;
+    font-size: 24px; }
+  .bonus-price-last {
+    top: 43.6%; }
+  .bonus-total-price {
+    font-size: 76px; }
+  .cashback-bonus .title {
+    font-size: 28px; }
+  .car-img {
+    top: 260px; }
+  .contacts-item .whats {
+    padding: 5px 0 5px 45px; }
+  .contacts-item a {
+    font-size: 21px; }
+  .contacts-item .teleg {
+    font-size: 19px;
+    padding: 5px 0 5px 45px; }
+  .car-big {
+    top: 896px;
+    width: 469px;
+    left: -187px; }
+  .car-small {
+    top: 750px;
+    right: -322px; }
+  .img-st {
+    max-width: 91%; }
+  .step-1__right .circle {
+    left: 124px; }
+  .step-1__right .circle-text {
+    left: 78px; } }
 
 /*# sourceMappingURL=../sourcemaps/style.css.map */
