@@ -1637,9 +1637,171 @@ footer {
     .subtitle {
         margin-bottom: 31px;
     }
+    .circle {
+        width: 145px;
+        height: 145px;
+        font-size: 64px;
+    }
+    .circle sub {
+        font-size: 30px;
+    }
+    .step-1__right .circle {
+        right: 229px;
+        top: 1px;
+    }
+    .step-1__right .circle-text {
+        max-width: 44%;
+        top: -81px;
+        right: 141px;
+    }
+    .img-st {
+        max-width: 55%;
+    }
+    .step-1__right .brand {
+        bottom: 15px;
+    }
+    .step-2__left .circle img:first-child {
+        width: 45%;
+    }
+    .step-2__left .circle img:last-child {
+        width: 65%;
+    }
+    .step-2__left .circle-text {
+        max-width: 24%;
+    }
+    .gift-car {
+        padding: 67px 0 96px 0;
+    }
+    .gift-car .title {
+        font-size: 38px;
+        line-height: 91.09%;
+        margin-bottom: 21px;
+    }
+    .gift-car-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .gift-car-box .btn-white {
+        margin: 35px 0 35px 0;
+    }
+    .car-big {
+        top: 591px;
+        max-width: 45%;
+    }
+    .gift-car-box__right {
+        width: 100%;
+    }
+    .gift-car-box__left {
+        width: 100%;
+    }
+    .car-small {
+        top: 425px;
+        left: initial;
+        right: -174px;
+    }
+    .cashback-bonus {
+        padding: 214px 0 0 0;
+    }
+    .step-2__left img {
+        max-width: 70%;
+    }
+}
+
+@media screen and (max-width: 1080px) {}
+
+@media screen and (max-width: 1040px) {
+    .step-1__right .circle {
+        right: initial;
+        left: 188px;
+        top: -16px;
+    }
+    .step-1,
+    .step-2 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .step-1__left {
+        width: 100%;
+    }
+    .step b {
+        display: block;
+        font-size: 22px;
+        margin-bottom: 99px;
+    }
+    .step b span {
+        font-size: 22px;
+    }
+    .step b br {
+        display: none;
+    }
+    .step-1__right .circle-text {
+        max-width: 100%;
+        width: 244px;
+        top: -70px;
+        right: initial;
+        left: 146px;
+    }
+    .step-2__left {
+        order: 5;
+    }
+    .step-2__right {
+        order: 3;
+    }
+    .step-2__right .btn-red {
+        order: 1;
+    }
+    .step-2__right {
+        width: 100%;
+        padding: 0 0 0 0;
+    }
+    .cashback-steps .title {
+        font-size: 38px;
+        line-height: 113.59%;
+        margin-bottom: 49px;
+    }
+    .step-2__right b::after {
+        bottom: -55px;
+    }
+    .step-1__right {
+        width: 100%;
+    }
+    .img-st {
+        width: 280.31px;
+        height: 119.29px;
+        max-width: 100%;
+    }
+    .step-1__right .brand {
+        width: 96.82px;
+        height: 29.96px;
+        left: 15px;
+        bottom: 15px;
+    }
+    .step-1__right .circle {
+        background: #FF9A23;
+    }
+    .step-2__left img {
+        max-width: 100%;
+        width: 250px;
+    }
+    .step-2__left .circle {
+        right: initial;
+        left: 125px;
+        top: 141px;
+    }
+    .step-2__left .circle-text {
+        max-width: 100%;
+        width: 100px;
+        right: initial;
+        top: 119px;
+        left: 212px;
+    }
 }
 
 @media screen and (max-width: 991px) {
+    .questions .title {
+        font-size: 38px;
+        margin-bottom: 50px;
+    }
     .bonus-top {
         margin-bottom: 0;
     }
@@ -1683,11 +1845,42 @@ footer {
         font-size: 36px;
         margin-bottom: 42px;
     }
+    .form-box {
+        padding: 65px 20px 42px 20px;
+        background: #FFFFFF;
+        margin-bottom: 65px;
+    }
+    .form-box .desc {
+        font-size: 18px;
+    }
+    .form textarea {
+        margin-bottom: 40px;
+    }
+    .form .btn-red {
+        margin-bottom: 49px;
+    }
 }
 
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 900px) {}
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 865px) {
+    .contacts-item-big {
+        width: 100%;
+    }
+    .car-big {
+        top: 625px;
+        max-width: 65%;
+    }
+    .container {
+        padding: 0 25px;
+    }
+    .questions-title {
+        line-height: 22.88px;
+    }
+    .questions-item {
+        margin-bottom: 25px;
+    }
+}
 
 @media screen and (max-width: 575px) {}
 
