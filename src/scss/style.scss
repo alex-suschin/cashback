@@ -326,13 +326,17 @@ h1 {
 .participate-items {
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: stretch;
 }
 
 .participate-item {
     min-width: 222px;
     max-height: 265px;
     margin-right: 82px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
     &:last-child {
         margin-right: 0;
     }
@@ -340,6 +344,7 @@ h1 {
 
 .participate-item-img {
     margin-bottom: 32px;
+    margin-top: auto;
 }
 
 .participate-item-title {
@@ -2055,7 +2060,8 @@ footer {
         margin-bottom: 50px;
     }
     .footer-item {
-        display: none;
+        width: 100%;
+        max-width: 100%;
     }
     .skob {
         height: 202px;
@@ -2085,10 +2091,7 @@ footer {
         height: 83px;
     }
     footer {
-        padding: 0 0 0 0;
-    }
-    .partners-items {
-        border: none;
+        padding: 51px 0 50px 0;
     }
     .form-box .title {
         font-size: 28px;
